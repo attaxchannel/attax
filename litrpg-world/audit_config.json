@@ -1,0 +1,38 @@
+{
+  "_comment": "Per-project audit rules for audit.py. Shared schema/hygiene checks run automatically; this file only adds project-specific coverage, band ordering, and character-fact consistency.",
+  "expect_name": "Seris Valdor",
+  "min_entries": 30,
+  "must_contain": [
+    "RANK F", "RANK E", "RANK D", "RANK C", "RANK B",
+    "RANK A", "RANK S", "RANK SS", "RANK SSS",
+    "Warrior", "Mage", "Assassin", "Alchemist",
+    "GEOGRAPHY", "ALDERATH", "LEDGER GUILD",
+    "MONSTER", "LEGENDARY", "STAVE",
+    "[ SYSTEM ]", "ASSAY ::",
+    "LEVEL_UP", "SKILL_GRADE", "PROFESSION_EVOLUTION", "RANK_ASCENT",
+    "QUEST_UPDATE", "ACHIEVEMENT", "ITEM_BIND", "STATUS_EFFECT", "CRITICAL",
+    "2,500 - 9,999"
+  ],
+  "bands": [
+    ["F", 0, 149],
+    ["E", 150, 649],
+    ["D", 650, 2499],
+    ["C", 2500, 9999],
+    ["B", 10000, 39999],
+    ["A", 40000, 149999],
+    ["S", 150000, 599999],
+    ["SS", 600000, 2499999],
+    ["SSS", 2490000, 1000000000000]
+  ],
+  "char_must_match": {
+    "declares Level 34": "Level:\\s*34",
+    "declares Rank C / Attested": "Rank:?\\s*C\\b.*Attested|Attested",
+    "declares AV 4,180": "4,180",
+    "declares Battle Mage": "Battle Mage",
+    "declares 4,200 mark debt": "4,200"
+  },
+  "char_must_not_match": {
+    "never called a Warrior": "Seris[^.]{0,80}is (a|an) Warrior",
+    "never ranked above C": "Seris[^.]{0,60}Rank:? (S|A|B|SS|SSS)\\b"
+  }
+}

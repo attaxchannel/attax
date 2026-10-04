@@ -1,0 +1,51 @@
+cross_validate.js — Node v24.21.0
+  [litrpg-world] OK   character json parsed by Node
+  [litrpg-world] OK   lorebook json parsed by Node
+  OK   [litrpg-world] spec is chara_card_v2 — chara_card_v2
+  OK   [litrpg-world] spec_version is 2.0 — 2.0
+  OK   [litrpg-world] data.name non-empty string — 12 chars
+  OK   [litrpg-world] data.description non-empty string — 6496 chars
+  OK   [litrpg-world] data.personality non-empty string — 2639 chars
+  OK   [litrpg-world] data.scenario non-empty string — 3243 chars
+  OK   [litrpg-world] data.first_mes non-empty string — 2351 chars
+  OK   [litrpg-world] data.mes_example non-empty string — 4606 chars
+  OK   [litrpg-world] data.creator_notes non-empty string — 1132 chars
+  OK   [litrpg-world] data.system_prompt non-empty string — 2169 chars
+  OK   [litrpg-world] data.post_history_instructions non-empty string — 476 chars
+  OK   [litrpg-world] alternate_greetings is string array — 2 greetings
+  OK   [litrpg-world] tags is string array — 13 tags
+  OK   [litrpg-world] lorebook.entries is plain object
+  OK   [litrpg-world] lorebook has at least 15 entries — 30 entries
+  OK   [litrpg-world] every entry matches ST entry schema — all 30 entries
+  OK   [litrpg-world] mes_example uses <START>
+  OK   [litrpg-world] mes_example uses {{user}}/{{char}}
+  OK   [litrpg-world] first_mes does not write {{user}} lines
+  OK   [litrpg-world] first_mes does not dictate user actions
+  OK   [litrpg-world] no markdown fences
+  OK   [litrpg-world] no TODO/FIXME/PLACEHOLDER
+  [sciw] OK   character json parsed by Node
+  [sciw] OK   lorebook json parsed by Node
+  OK   [sciw] spec is chara_card_v2 — chara_card_v2
+  OK   [sciw] spec_version is 2.0 — 2.0
+  OK   [sciw] data.name non-empty string — 9 chars
+  OK   [sciw] data.description non-empty string — 5070 chars
+  OK   [sciw] data.personality non-empty string — 1962 chars
+  OK   [sciw] data.scenario non-empty string — 3299 chars
+  OK   [sciw] data.first_mes non-empty string — 2549 chars
+  OK   [sciw] data.mes_example non-empty string — 3956 chars
+  OK   [sciw] data.creator_notes non-empty string — 1720 chars
+  OK   [sciw] data.system_prompt non-empty string — 2642 chars
+  OK   [sciw] data.post_history_instructions non-empty string — 604 chars
+  OK   [sciw] alternate_greetings is string array — 2 greetings
+  OK   [sciw] tags is string array — 13 tags
+  OK   [sciw] lorebook.entries is plain object
+  OK   [sciw] lorebook has at least 15 entries — 99 entries
+  OK   [sciw] every entry matches ST entry schema — all 99 entries
+  OK   [sciw] mes_example uses <START>
+  OK   [sciw] mes_example uses {{user}}/{{char}}
+  OK   [sciw] first_mes does not write {{user}} lines
+  OK   [sciw] first_mes does not dictate user actions
+  OK   [sciw] no markdown fences
+  OK   [sciw] no TODO/FIXME/PLACEHOLDER
+
+48 checks passed, 0 failed

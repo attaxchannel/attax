@@ -1,0 +1,193 @@
+========================================================================
+STRUCTURAL AUDIT — attax (all projects)
+========================================================================
+
+
+litrpg-world A. Files
+  [PASS] character json present  (LitRPG_World.json)
+  [PASS] lorebook json present  (LitRPG_World_Lorebook.json)
+  [PASS] character non-empty  (26863 bytes)
+  [PASS] lorebook non-empty  (84823 bytes)
+
+litrpg-world B. Card
+  [PASS] spec == chara_card_v2  (chara_card_v2)
+  [PASS] spec_version == 2.0  (2.0)
+  [PASS] data object present
+  [PASS] data.name non-empty string  (12 chars)
+  [PASS] data.description non-empty string  (6496 chars)
+  [PASS] data.personality non-empty string  (2639 chars)
+  [PASS] data.scenario non-empty string  (3243 chars)
+  [PASS] data.first_mes non-empty string  (2351 chars)
+  [PASS] data.mes_example non-empty string  (4606 chars)
+  [PASS] data.creator_notes non-empty string  (1132 chars)
+  [PASS] data.system_prompt non-empty string  (2169 chars)
+  [PASS] data.post_history_instructions non-empty string  (476 chars)
+  [PASS] alternate_greetings is list[str]  (2 entries)
+  [PASS] tags is list[str]  (13 tags)
+  [PASS] extensions is dict
+  [PASS] name matches config  (Seris Valdor)
+
+litrpg-world C. Lorebook
+  [PASS] entries is dict keyed by uid
+  [PASS] at least 30 entries  (30 entries)
+  [PASS] uids contiguous from 0  (0..29)
+  [PASS] every entry matches ST entry schema  (all 30 entries)
+
+litrpg-world D. Coverage
+  [PASS] lore mentions 'RANK F'
+  [PASS] lore mentions 'RANK E'
+  [PASS] lore mentions 'RANK D'
+  [PASS] lore mentions 'RANK C'
+  [PASS] lore mentions 'RANK B'
+  [PASS] lore mentions 'RANK A'
+  [PASS] lore mentions 'RANK S'
+  [PASS] lore mentions 'RANK SS'
+  [PASS] lore mentions 'RANK SSS'
+  [PASS] lore mentions 'Warrior'
+  [PASS] lore mentions 'Mage'
+  [PASS] lore mentions 'Assassin'
+  [PASS] lore mentions 'Alchemist'
+  [PASS] lore mentions 'GEOGRAPHY'
+  [PASS] lore mentions 'ALDERATH'
+  [PASS] lore mentions 'LEDGER GUILD'
+  [PASS] lore mentions 'MONSTER'
+  [PASS] lore mentions 'LEGENDARY'
+  [PASS] lore mentions 'STAVE'
+  [PASS] lore mentions '[ SYSTEM ]'
+  [PASS] lore mentions 'ASSAY ::'
+  [PASS] lore mentions 'LEVEL_UP'
+  [PASS] lore mentions 'SKILL_GRADE'
+  [PASS] lore mentions 'PROFESSION_EVOLUTION'
+  [PASS] lore mentions 'RANK_ASCENT'
+  [PASS] lore mentions 'QUEST_UPDATE'
+  [PASS] lore mentions 'ACHIEVEMENT'
+  [PASS] lore mentions 'ITEM_BIND'
+  [PASS] lore mentions 'STATUS_EFFECT'
+  [PASS] lore mentions 'CRITICAL'
+  [PASS] lore mentions '2,500 - 9,999'
+
+litrpg-world E. Hygiene
+  [PASS] card has no markdown fence
+  [PASS] card has no TODO/FIXME/PLACEHOLDER
+  [PASS] card has no line comments
+  [PASS] card has no block comments
+  [PASS] lorebook has no markdown fence
+  [PASS] lorebook has no TODO/FIXME/PLACEHOLDER
+  [PASS] lorebook has no line comments
+  [PASS] lorebook has no block comments
+
+litrpg-world F. Bands
+  [PASS] band floors ascending  (9 bands)
+
+litrpg-world I. Isolation
+  [PASS] this project's card contains ITS OWN character, not another project's  (found 'Seris Valdor' (expected 'Seris Valdor'))
+  [PASS] no two projects emit the same character name  (none)
+
+litrpg-world G. Character
+  [PASS] declares Level 34
+  [PASS] declares Rank C / Attested
+  [PASS] declares AV 4,180
+  [PASS] declares Battle Mage
+  [PASS] declares 4,200 mark debt
+  [PASS] never called a Warrior
+  [PASS] never ranked above C
+
+sciw A. Files
+  [PASS] character json present  (SCIW.json)
+  [PASS] lorebook json present  (SCIW_Lorebook.json)
+  [PASS] character non-empty  (25931 bytes)
+  [PASS] lorebook non-empty  (240661 bytes)
+
+sciw B. Card
+  [PASS] spec == chara_card_v2  (chara_card_v2)
+  [PASS] spec_version == 2.0  (2.0)
+  [PASS] data object present
+  [PASS] data.name non-empty string  (9 chars)
+  [PASS] data.description non-empty string  (5070 chars)
+  [PASS] data.personality non-empty string  (1962 chars)
+  [PASS] data.scenario non-empty string  (3299 chars)
+  [PASS] data.first_mes non-empty string  (2549 chars)
+  [PASS] data.mes_example non-empty string  (3956 chars)
+  [PASS] data.creator_notes non-empty string  (1720 chars)
+  [PASS] data.system_prompt non-empty string  (2642 chars)
+  [PASS] data.post_history_instructions non-empty string  (604 chars)
+  [PASS] alternate_greetings is list[str]  (2 entries)
+  [PASS] tags is list[str]  (13 tags)
+  [PASS] extensions is dict
+  [PASS] name matches config  (Ryl Ansel)
+
+sciw C. Lorebook
+  [PASS] entries is dict keyed by uid
+  [PASS] at least 95 entries  (99 entries)
+  [PASS] uids contiguous from 0  (0..98)
+  [PASS] every entry matches ST entry schema  (all 99 entries)
+
+sciw D. Coverage
+  [PASS] lore mentions 'RANK E'
+  [PASS] lore mentions 'RANK D'
+  [PASS] lore mentions 'RANK C'
+  [PASS] lore mentions 'RANK B'
+  [PASS] lore mentions 'RANK A'
+  [PASS] lore mentions 'RANK S'
+  [PASS] lore mentions 'RANK SS'
+  [PASS] lore mentions 'RANK SSS'
+  [PASS] lore mentions 'TRANSCENDENT'
+  [PASS] lore mentions 'Unclassed'
+  [PASS] lore mentions 'Elementalist'
+  [PASS] lore mentions 'Berserker'
+  [PASS] lore mentions 'SUNDERREACH'
+  [PASS] lore mentions 'HALLSPATH'
+  [PASS] lore mentions "ADVENTURER'S GUILD"
+  [PASS] lore mentions 'HOLY CHURCH'
+  [PASS] lore mentions 'VYR ACADEMY'
+  [PASS] lore mentions 'DEMON COURT'
+  [PASS] lore mentions 'MONSTERS HAVE NO PANEL'
+  [PASS] lore mentions 'LEGENDARY'
+  [PASS] lore mentions 'SKILL STONES'
+  [PASS] lore mentions '[SYSTEM]'
+  [PASS] lore mentions '◈ STATUS EFFECT ◈'
+  [PASS] lore mentions 'LEVEL UP'
+  [PASS] lore mentions 'SKILL ACQUIRED'
+  [PASS] lore mentions 'CLASS EVOLUTION'
+  [PASS] lore mentions 'RANK ASCENT'
+  [PASS] lore mentions 'QUEST'
+  [PASS] lore mentions 'ACHIEVEMENT'
+  [PASS] lore mentions 'ITEM BOUND'
+  [PASS] lore mentions 'STATUS EFFECT'
+  [PASS] lore mentions 'CRITICAL'
+  [PASS] lore mentions '[REGISTRY]'
+  [PASS] lore mentions 'POWER SCALING'
+  [PASS] lore mentions 'TRANSMIGRATION'
+  [PASS] lore mentions 'RETURN PROTOCOL'
+
+sciw E. Hygiene
+  [PASS] card has no markdown fence
+  [PASS] card has no TODO/FIXME/PLACEHOLDER
+  [PASS] card has no line comments
+  [PASS] card has no block comments
+  [PASS] lorebook has no markdown fence
+  [PASS] lorebook has no TODO/FIXME/PLACEHOLDER
+  [PASS] lorebook has no line comments
+  [PASS] lorebook has no block comments
+
+sciw F. Bands
+  [PASS] band floors ascending  (8 bands)
+
+sciw I. Isolation
+  [PASS] this project's card contains ITS OWN character, not another project's  (found 'Ryl Ansel' (expected 'Ryl Ansel'))
+  [PASS] no two projects emit the same character name  (none)
+
+sciw G. Character
+  [PASS] declares Level 14
+  [PASS] declares Rank E / Witnessed
+  [PASS] declares UNCLASSED
+  [PASS] declares PER 18
+  [PASS] declares the Registry anomaly
+  [PASS] declares transmigration
+  [PASS] never claims a rank above E
+  [PASS] never claims a hidden bloodline
+  [PASS] never claims secret great power
+
+========================================================================
+TOTAL: 153 passed, 0 failed
+========================================================================

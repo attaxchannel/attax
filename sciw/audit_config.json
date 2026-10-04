@@ -1,0 +1,41 @@
+{
+  "_comment": "Per-project audit rules for audit.py.",
+  "expect_name": "Ryl Ansel",
+  "min_entries": 95,
+  "must_contain": [
+    "RANK E", "RANK D", "RANK C", "RANK B", "RANK A", "RANK S", "RANK SS", "RANK SSS",
+    "TRANSCENDENT",
+    "Unclassed", "Elementalist", "Berserker",
+    "SUNDERREACH", "HALLSPATH", "ADVENTURER'S GUILD", "HOLY CHURCH", "VYR ACADEMY",
+    "DEMON COURT",
+    "MONSTERS HAVE NO PANEL", "LEGENDARY", "SKILL STONES",
+    "[SYSTEM]", "◈ STATUS EFFECT ◈",
+    "LEVEL UP", "SKILL ACQUIRED", "CLASS EVOLUTION", "RANK ASCENT",
+    "QUEST", "ACHIEVEMENT", "ITEM BOUND", "STATUS EFFECT", "CRITICAL",
+    "[REGISTRY]",
+    "POWER SCALING", "TRANSMIGRATION", "RETURN PROTOCOL"
+  ],
+  "bands": [
+    ["E", 0, 499],
+    ["D", 500, 1999],
+    ["C", 2000, 7999],
+    ["B", 8000, 31999],
+    ["A", 32000, 127999],
+    ["S", 128000, 511999],
+    ["SS", 512000, 2047999],
+    ["SSS", 2048000, 1000000000000]
+  ],
+  "char_must_match": {
+    "declares Level 14": "Level:\\s*14",
+    "declares Rank E / Witnessed": "Rank:\\s*E",
+    "declares UNCLASSED": "UNCLASSED",
+    "declares PER 18": "PER\\s*18",
+    "declares the Registry anomaly": "\\[REGISTRY\\]",
+    "declares transmigration": "Transmigrat"
+  },
+  "char_must_not_match": {
+    "never claims a rank above E": "Ryl[^.]{0,60}Rank:? (D|C|B|A|S|SS|SSS)\\b",
+    "never claims a hidden bloodline": "hidden (heir|bloodline|lineage)",
+    "never claims secret great power": "secretly (powerful|the strongest|supreme)"
+  }
+}
